@@ -1,3 +1,7 @@
+## WORK IN PROGRESS!!
+
+I am forking this repository and changing it to make it more suitable for my own usecases.
+
 ![Version 1.4](http://img.shields.io/badge/version-v1.4-green.svg)
 ![Python 3.8](http://img.shields.io/badge/python-3.8-blue.svg)
 [![MIT License](http://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/sc0tfree/updog/blob/master/LICENSE)
