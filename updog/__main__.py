@@ -173,11 +173,32 @@ def main():
         error('Exiting!')
     signal.signal(signal.SIGINT, handler)
 
+    # Make sure that the certificate and key-files are present before starting the HTTPS connection.
+    cert_file = "./certs/cert.pem"
+    key_file = "./certs/key.pem"
+
+    try:
+        #trying to the certificate file in read mode
+        fo = open(cert_file,"rt")
+    except FileNotFoundError:
+        print("Certificate not found")
+        error('Exiting!')
+
+    try:
+        #trying to open the key file in read mode
+        fo = open(key_file,"rt")
+    except FileNotFoundError:
+        print("Key file not found")
+        error('Exiting!')
+
+
     ssl_context = None
     if args.ssl:
-        ssl_context = 'adhoc'
+        ssl_context=(cert_file,key_file)
+
 
     run_simple("0.0.0.0", int(args.port), app, ssl_context=ssl_context)
+
 
 
 if __name__ == '__main__':
