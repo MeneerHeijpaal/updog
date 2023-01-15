@@ -21,12 +21,19 @@ can use user supplied SSL certificates and use HTTP basic auth.
   <img src="https://sc0tfree.squarespace.com/s/updog-screenshot.png" alt="Updog screenshot"/>
 </p>
 
+## Requirements
+* Certificate files in .PEM-format *(cert.pem and privkey.pem)*
+* direnv
+* python3
+
 ## Installation
 
 Install:
 
 ```bash
 git clone https://github.com/NVQXE23I/updog.git
+direnv allow
+pip install -r requirements.txt
 ```
 
 ## Usage
