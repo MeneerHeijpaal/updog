@@ -25,11 +25,13 @@ can use user supplied SSL certificates and use HTTP basic auth.
 
 Install:
 
-`git clone https://github.com/NVQXE23I/updog.git `
+```bash
+git clone https://github.com/NVQXE23I/updog.git
+```
 
 ## Usage
 
-`updog [-d DIRECTORY] [-p PORT] [--password PASSWORD] [--ssl]`
+`python updog.py [-d DIRECTORY] [-p PORT] [--password PASSWORD] [--ssl]`
 
 | Argument                            | Description                                      |
 |-------------------------------------|--------------------------------------------------| 
@@ -68,7 +70,7 @@ enter the password in the password field.
 
 **Use an SSL connection:**
 
-`updog --ssl`
+`python updog.py --ssl`
 
 *Please note*: (If you want to use `--ssl` option, put the correct files in the **/certs** directory.
 Otherwise you will get a error message.)
