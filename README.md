@@ -32,7 +32,9 @@ Install:
 
 ```bash
 git clone https://github.com/NVQXE23I/updog.git
+cd updog
 direnv allow
+curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && rm get-pip.py
 pip install -r requirements.txt
 ```
 
@@ -53,11 +55,11 @@ pip install -r requirements.txt
 
 **The shortcut *https* is just the following command:**
 
-`python updog.py --p443 --ssl`
+`python updog.py -p443 --ssl`
 
 **Serve from your current directory:**
 
-`python updog/py`
+`python updog.py`
 
 **Serve from another directory:**
 
