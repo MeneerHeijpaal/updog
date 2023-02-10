@@ -31,7 +31,7 @@ can use user supplied SSL certificates and use HTTP basic auth.
 Install:
 
 ```bash
-git clone https://github.com/NVQXE23I/updog.git
+git clone https://github.com/MeneerHeijpaal/updog.git
 cd updog
 direnv allow
 curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && rm get-pip.py
@@ -52,10 +52,6 @@ pip install -r requirements.txt
 | -h, --help                          | Show help                                        |
 
 ## Examples
-
-**The shortcut *https* is just the following command:**
-
-`python updog.py -p443 --ssl`
 
 **Serve from your current directory:**
 
